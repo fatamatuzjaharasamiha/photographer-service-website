@@ -1,38 +1,23 @@
 [
-    {
-      "_id": "625b8ea47d12a8de37cc10ca",
-      "picture": "http://placehold.it/32x32",
-      "name": "Hopkins Barr",
-      "about": "Ipsum occaecat aliquip occaecat sunt aliquip qui labore excepteur consequat commodo incididunt. Et pariatur dolor nostrud et ea. Enim nisi non magna do Lorem esse. Aliqua cillum excepteur aliqua excepteur commodo elit elit consectetur Lorem irure aute. Elit ea mollit duis dolor in.\r\n"
-    },
-    {
-      "_id": "625b8ea45a721afc4bdeca28",
-      "picture": "http://placehold.it/32x32",
-      "name": "Angelita Maxwell",
-      "about": "Deserunt amet reprehenderit laborum voluptate exercitation Lorem ipsum fugiat culpa. Id eu cillum reprehenderit voluptate occaecat ea cupidatat. Aliquip aliqua dolore ea officia reprehenderit tempor pariatur officia mollit laborum sint excepteur deserunt. Mollit enim officia et eu incididunt enim ex cupidatat in. Lorem commodo deserunt veniam deserunt reprehenderit sint deserunt consectetur et eiusmod do sit nisi consequat. Veniam ad consequat reprehenderit dolor consequat ea aute qui eu quis proident labore nostrud in.\r\n"
-    },
-    {
-      "_id": "625b8ea47b45fdb2ec85c737",
-      "picture": "http://placehold.it/32x32",
-      "name": "Genevieve Mcclure",
-      "about": "Fugiat officia officia Lorem eiusmod voluptate aute labore occaecat. Occaecat amet ullamco nulla excepteur veniam. Lorem id tempor occaecat in non quis qui commodo. Ipsum proident nulla ipsum dolor mollit sunt commodo do ex amet sunt.\r\n"
-    },
-    {
-      "_id": "625b8ea4848ebc8a456ffbbf",
-      "picture": "http://placehold.it/32x32",
-      "name": "Katheryn Guthrie",
-      "about": "Id occaecat elit amet culpa laborum occaecat exercitation voluptate eu fugiat aliqua. Sunt non cupidatat nostrud magna dolor sunt dolore velit ullamco ipsum proident quis. Enim mollit culpa ullamco sint nostrud quis mollit pariatur anim adipisicing ullamco nisi. Veniam ad cillum mollit ullamco labore ad cupidatat. Ex duis magna consectetur culpa nulla do fugiat exercitation.\r\n"
-    },
-    {
-      "_id": "625b8ea461c33ff84aa44cb5",
-      "picture": "http://placehold.it/32x32",
-      "name": "Nolan Church",
-      "about": "Veniam anim ullamco voluptate incididunt reprehenderit adipisicing aute consectetur culpa occaecat id Lorem fugiat. Quis duis ea ut nulla est eu occaecat ea. Laborum mollit fugiat ullamco consequat aute dolor nostrud nostrud enim sunt. Tempor labore exercitation cillum qui occaecat tempor nisi dolore dolore sint aliqua. Esse laborum amet ea sint. Ullamco aliqua Lorem est commodo nisi mollit et officia.\r\n"
-    },
-    {
-      "_id": "625b8ea4f5a746901a20c578",
-      "picture": "http://placehold.it/32x32",
-      "name": "Rosales Farley",
-      "about": "Sunt aliquip sint non exercitation enim voluptate mollit. Anim commodo sit ex duis do est velit culpa officia tempor. Aute culpa ad laborum in.\r\n"
-    }
-  ]
+  {
+    "id": "625b8ea47d12a8de37cc10ca",
+    "picture": "https://www.addressbazar.com/assets/images/category/120928.jpg",
+    "name": "Event Photography",
+    "price": "$ 1300",
+    "about": "Essentially, the purpose of photography is to communicate and document moments in time. When you take a photograph and share it with others, you're showing a moment that was frozen through a picture."
+  },
+  {
+    "id": "625b8ea45a721afc4bdeca28",
+    "picture": "https://121clicks.com/wp-content/uploads/2020/04/liliia_beda_fine_art_photography_07.jpg",
+    "name": "Portrait Photography",
+    "price": "$ 1300",
+    "about": "Portrait photography is one of the most popular genres of photography, with good reason. Good portrait photographers are able to capture the personality."
+  },
+  {
+    "id": "625b8ea47b45fdb2ec85c737",
+    "picture": "https://images.ctfassets.net/u0haasspfa6q/3P0NBDuuWRwwLuftbJy3tV/ea19b278c1fc7481b090da183985262c/111746-12726577-food_shoot_tacos_jpg",
+    "name": "Food & Drink Photography",
+    "price": "$ 1300",
+    "about": "When it’s time to capture the perfect bite, it’s important to have the right people behind the camera. A professional photographer can showcase your delicious."
+  }
+]
