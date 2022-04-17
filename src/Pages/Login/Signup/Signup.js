@@ -11,7 +11,10 @@ const Signup = () => {
     const [password, setPassword] = useState('')
     const [confirmPass, setConfirmPass] = useState('')
     const [error, setError] = useState('')
-    const [createUserWithEmailAndPassword, user] = useCreateUserWithEmailAndPassword(auth);
+
+    const [createUserWithEmailAndPassword, user, loading] = useCreateUserWithEmailAndPassword(auth);
+    console.log(user)
+
     const handleEmail = (event) => {
         const emailRegex = /\S+@\S+\.\S+/;
         const validEmail = emailRegex.test(event.target.value)
@@ -32,6 +35,7 @@ const Signup = () => {
     const handleConfirmPass = event => {
         setConfirmPass(event.target.value)
     }
+
     const handleCreateUser = (event) => {
         event.preventDefault();
         if (password !== confirmPass) {
@@ -39,8 +43,9 @@ const Signup = () => {
             return;
         }
         createUserWithEmailAndPassword(email, password);
-
+        setError('');
     }
+
 
     return (
         <div>
@@ -65,9 +70,12 @@ const Signup = () => {
                     <Form.Control onBlur={handleConfirmPass} type="password" placeholder="Confirm Password" required />
 
                 </Form.Group>
-                <h6>{error}</h6>
+                <p>{error}</p>
+                {
+                    loading && <h6 className='text-center'>loading....</h6>
+                }
                 <Button variant="primary" type="submit">
-                    Submit
+                    Sign Up
                 </Button>
             </Form>
         </div>
