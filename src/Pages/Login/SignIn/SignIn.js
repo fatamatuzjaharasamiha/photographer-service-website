@@ -1,6 +1,7 @@
 import React from 'react';
 import './SignIn.css'
 import { Button, Form } from 'react-bootstrap';
+import GoogleLogin from '../GoogleLogin/GoogleLogin';
 
 
 const SignIn = () => {
@@ -33,8 +34,9 @@ const SignIn = () => {
                 <Button variant="dark" type="submit">
                     Submit
                 </Button>
+                <GoogleLogin></GoogleLogin>
             </Form>
-            
+           
         </div>
     );
 };

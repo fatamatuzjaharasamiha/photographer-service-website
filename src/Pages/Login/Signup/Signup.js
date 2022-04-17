@@ -43,7 +43,9 @@ const Signup = () => {
             return;
         }
         createUserWithEmailAndPassword(email, password);
-        setError('');
+        if (user) {
+            setError('');
+        }
     }
 
 
