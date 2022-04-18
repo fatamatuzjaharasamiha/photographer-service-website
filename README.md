@@ -1,5 +1,35 @@
 # Getting Started with Create React App
 
+# Project Name : Photographers Service
+##  Livesite Link : [Smart Watch Pro](https://dulcet-lokum-0853d9.netlify.app/ "livesite")
+
+### Project Details
+* At first  create private repository and create react app.
+
+* Create project in firebase.init.js 
+
+* Create all component in src folder 
+
+* Maintain folder structure
+
+* create fake data for services section
+
+* Implement Email password based authentication
+
+* If anyone trying to reach a website that can not found,than it shows 404 error.
+
+
+# Technology used :
+
+* Install firebase
+
+* Install router
+
+* install React Bootstrap
+
+* Install React firebase hooks
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
