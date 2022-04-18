@@ -8,6 +8,7 @@ import Header from './Pages/Shared/Header/Header';
 import Checkout from './Pages/CheckOut/Checkout';
 import Signup from './Pages/Login/Signup/Signup';
 import SignIn from './Pages/Login/SignIn/SignIn';
+import Footer from './Pages/Shared/Footer/Footer';
 
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
         <Route path='/signup' element={<Signup></Signup>}></Route>
         <Route path='/*' element={<NotFound></NotFound>}></Route>
       </Routes>
+      <Footer></Footer>
     </div>
   );
 }
