@@ -9,6 +9,7 @@ import Checkout from './Pages/CheckOut/Checkout';
 import Signup from './Pages/Login/Signup/Signup';
 import SignIn from './Pages/Login/SignIn/SignIn';
 import Footer from './Pages/Shared/Footer/Footer';
+import RequireAuth from './Pages/Login/RequireAuth/RequireAuth';
 
 
 function App() {
@@ -20,7 +21,10 @@ function App() {
         <Route path='/home' element={<Home></Home>}></Route>
         <Route path='/blogs' element={<Blogs></Blogs>}></Route>
         <Route path='/about' element={<About></About>}></Route>
-        <Route path='/checkout' element={<Checkout></Checkout>}></Route>
+        <Route path='/checkout' element={
+          <RequireAuth>
+            <Checkout></Checkout>
+          </RequireAuth>}></Route>
         <Route path='/signIn' element={<SignIn></SignIn>}></Route>
         <Route path='/signup' element={<Signup></Signup>}></Route>
         <Route path='/*' element={<NotFound></NotFound>}></Route>

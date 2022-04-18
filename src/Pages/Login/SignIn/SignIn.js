@@ -1,15 +1,21 @@
 import React, { useState } from 'react';
 import './SignIn.css'
-import { Button, Form } from 'react-bootstrap';
+import { Button, Form, Spinner, Toast } from 'react-bootstrap';
 import GoogleLogin from '../GoogleLogin/GoogleLogin';
 import { useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import auth from '../../../firebase.init';
+import { useLocation, useNavigate } from 'react-router-dom';
 
 
 const SignIn = () => {
 
     const [email, setEmail] = useState('')
     const [password, setPassword] = useState('')
+
+    let navigate = useNavigate();
+    let location = useLocation();
+    let from = location.state?.from?.pathname || "/";
+
 
     const [signInWithEmailAndPassword, user, loading, error] = useSignInWithEmailAndPassword(auth);
 
@@ -22,6 +28,9 @@ const SignIn = () => {
         setPassword(event.target.value)
     }
 
+    if (user) {
+        navigate(from, { replace: true });
+    }
     const handleSignIn = (event) => {
         event.preventDefault();
         signInWithEmailAndPassword(email, password);
@@ -43,10 +52,31 @@ const SignIn = () => {
                     <Form.Label>Password</Form.Label>
                     <Form.Control onChange={handlePassword} type="password" placeholder="Password" required />
                 </Form.Group>
-                <p style={{ color: 'red' }}>{error?.message}</p>
+
                 {
-                    loading && <h6>Loading...</h6>
+                    loading && <Button variant="primary" disabled>
+                        <Spinner
+                            as="span"
+                            animation="grow"
+                            size="sm"
+                            role="status"
+                            aria-hidden="true"
+                        />
+                        Loading...
+                    </Button>
                 }
+                
+                {
+                    error && <Toast>
+                        <Toast.Header>
+                            <img src="holder.js/20x20?text=%20" className="rounded me-2" alt="" />
+                            <strong className="me-auto">Error</strong>
+                        </Toast.Header>
+                        <Toast.Body className='text-danger'>{error?.message}</Toast.Body>
+                    </Toast>
+                }
+                <br />
+
                 <Button variant="dark" type="submit">
                     Sign In
                 </Button>

@@ -2,6 +2,7 @@ import { createUserWithEmailAndPassword } from 'firebase/auth';
 import React, { useState } from 'react';
 import { Button, Form } from 'react-bootstrap';
 import { useCreateUserWithEmailAndPassword } from 'react-firebase-hooks/auth';
+import { Navigate, useNavigate } from 'react-router-dom';
 
 import auth from '../../../firebase.init';
 
@@ -11,6 +12,7 @@ const Signup = () => {
     const [password, setPassword] = useState('')
     const [confirmPass, setConfirmPass] = useState('')
     const [error, setError] = useState('')
+    const navigate = useNavigate();
 
     const [createUserWithEmailAndPassword, user, loading] = useCreateUserWithEmailAndPassword(auth);
     console.log(user)
@@ -47,11 +49,14 @@ const Signup = () => {
             setError('');
         }
     }
+    if (user) {
+        navigate('/home')
+    }
 
 
     return (
         <div>
-            <h3>sign up</h3>
+            <h3 className='text center'>sign up</h3>
             <Form onSubmit={handleCreateUser} className='w-50 mx-auto mb-5 shadow-lg p-5 bg-body rounded'>
                 <Form.Group className="mb-3" controlId="formBasicEmail">
                     <Form.Label>Email address</Form.Label>
