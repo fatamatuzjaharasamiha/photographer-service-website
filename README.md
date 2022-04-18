@@ -1,7 +1,7 @@
 # Getting Started with Create React App
 
-# Project Name : Photographers Service
-##  Livesite Link : [Smart Watch Pro](https://dulcet-lokum-0853d9.netlify.app/ "livesite")
+# Project Name : Photographer Services
+##  Livesite Link : [Photographer Services](https://photographer-services-7f1fe.web.app/ "livesite")
 
 ### Project Details
 * At first  create private repository and create react app.
@@ -19,7 +19,7 @@
 * If anyone trying to reach a website that can not found,than it shows 404 error.
 
 
-# Technology used :
+### Technology used :
 
 * Install firebase
 
